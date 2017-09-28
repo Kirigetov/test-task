@@ -1,0 +1,22 @@
+extends _layout
+
+block title
+	title Test Title
+
+block content
+	.main
+		aside.sidebar
+			.sidebar__logo
+				a.logo(href="") CRM
+				
+			.sidebar__nav
+				include partials/_nav.pug
+		.container
+			include partials/_header.pug
+
+			.content
+				include partials/_profile.pug
+
+				include partials/_tabs.pug
+				
+		

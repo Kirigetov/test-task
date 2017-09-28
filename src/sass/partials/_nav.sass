@@ -1,0 +1,49 @@
+.nav
+	&__item
+		position: relative
+		transition: background 0.2s
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			opacity: 0
+			visibility: hidden
+			width: 5px
+			background: #ffc12d
+			transition: background 0.2s
+		&:hover,
+		&.is-active
+			background-color: #442a9d
+			.nav__link
+				&:before
+					border-color: #442a9d
+		&.is-active
+			&:before
+				opacity: 1
+				visibility: visible
+
+	&__link
+		position: relative
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		padding: 21px 20px
+		color: $white
+		text-decoration: none
+		+light
+		&:before
+			content: ''
+			position: absolute
+			left: 20px
+			right: 20px
+			bottom: 0
+			border-bottom: 1px solid #3a414a
+		.fa
+			margin-left: 10px
+			font-size: 22px
+	&__link-text
+		display: inline-block
+		margin-left: 20px
+		font-size: 18px

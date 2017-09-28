@@ -1,0 +1,42 @@
+.tabs
+	&__head
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		&.is-active
+			.tabs__link
+				&:after
+					opacity: 1
+					visibility: visible
+	&__link
+		position: relative
+		display: block
+		min-width: 110px
+		height: 60px
+		line-height: 60px
+		padding: 0 15px
+		color: $gray_dark
+		font-family: "Open Sans"
+		font-size: 14px
+		+bold
+		text-transform: uppercase
+		text-align: center
+		text-decoration: none
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			height: 6px
+			background-color: #442a9d
+			border-radius: 3px
+			transition: opacity 0.3s
+			opacity: 0
+			visibility: hidden
+		&:hover
+			&:after
+				opacity: 1
+				visibility: visible
+	&__body

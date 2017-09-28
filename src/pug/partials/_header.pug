@@ -1,0 +1,42 @@
+//- begin header
+header.header
+	.inner.header__inner
+		.header__left
+			//- begin breadcrumbs
+			.breadcrumbs
+				ul.breadcrumbs__list
+					li.breadcrumbs__item
+						a.breadcrumbs__link(href="") Customer
+					li.breadcrumbs__item
+						| Max Jones
+
+			//- end breadcrumbs
+		.header__right
+			.header__part
+				//- begin search
+				.search
+					form.search__form.form(action="")
+						.form__group
+							input.form__input(type="text" placeholder="SEARCH")
+							button.form__btn.btn
+								i.fa.fa-search
+				//- end search
+			.header__part.header__part_ml
+				//- begin notification
+				.notification
+					a(href="").notification__item
+						i.fa.fa-bell
+						span.notification__counter 4
+				//- end notification
+
+			.header__part
+				//- begin authorization
+				.authorization
+					a(href="").user
+						.user__pic
+							img(src="img/staff2.jpg", alt="")
+						.user__name 
+							| Hello Lauren
+				//- end authorization
+
+//- end header

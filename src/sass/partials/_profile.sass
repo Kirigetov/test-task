@@ -1,0 +1,67 @@
+// profile
+.profile
+	padding: 50px 0
+	&__inner
+		display: flex
+		flex-flow: row nowrap
+	&__sidebar
+		padding: 0 35px
+	&__img
+		width: 90px
+		border-radius: 50%
+		overflow: hidden
+	&__container
+		width: 100%
+	&__section
+		padding-right: 35px
+		+clr
+		&:not(:last-child)
+			border-bottom: 1px solid $border
+		&_pad_top
+			padding-top: 30px
+	&__row
+		margin-bottom: 10px
+	&__part
+		display: inline-block
+		vertical-align: top
+		width: 30%
+		&:not(:last-child)
+			margin-right: 30px
+	&__part-title
+		margin-bottom: 5px
+		color: $gray_light
+		font-size: 12px
+		+bold
+		text-transform: uppercase
+		letter-spacing: 1px
+	&__part-data
+		color: $blue
+		font-size: 15px
+		+bold
+
+.take-to-work-me-please
+	display: inline-block
+	vertical-align: middle
+	margin-right: 15px
+	color: $gray_dark
+	font-size: 20px
+	+bold
+	line-height: 1
+	text-transform: uppercase
+
+.i-will-try-very-hard
+	display: inline-block
+	vertical-align: middle
+	padding: 3px 4px
+	color: $white
+	font-size: 11px
+	+bold
+	line-height: 1
+	text-transform: uppercase
+	border-radius: 4px
+	background-color: $yellow
+
+.honestly
+	color: $gray_light
+	font-size: 15px
+	+bold
